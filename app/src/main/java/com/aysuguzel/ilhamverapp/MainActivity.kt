@@ -55,7 +55,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             IlhamVerAppTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -88,7 +87,6 @@ fun Sayfa() {
 
                         ) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                   // containerColor = Color.LightGray,
                     containerColor = colorResource(id = R.color.gunduz),
                     titleContentColor = colorResource(id = R.color.gece)
 
@@ -133,34 +131,7 @@ fun Sayfa() {
 
         }
 
-        //must
-       /* floatingActionButton = {
-            FloatingActionButton(onClick = { /*TODO*/ }) {
-
-            }
-        }*/
-
-
     )
-
-
-
-
-
-
-      //must
-       /* LazyColumn(
-            contentPadding = it
-        ) {
-            items(3) {
-                Image(
-                    painter = painterResource(id = R.drawable.ic_launcher_foreground),
-                    contentDescription = ""
-                )
-            }
-        }*/
-
-
 
     }
 
